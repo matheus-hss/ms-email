@@ -1,0 +1,27 @@
+#SERVER PORT
+server:
+  port: 8081
+
+#APPLICATION NAME
+spring:
+  application:
+    name: email
+
+#GMAIL
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: your_username
+    password: your_password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+#RABBITMQ
+  rabbitmq:
+    username: guest
+    password: guest
+    port: 5672
